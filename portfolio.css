@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+::selection{
+    color: pink;
+    background-color: aquamarine;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+body{
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+section {
+    justify-content: center;
+    margin-left: 200px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+/*For landing page*/
+#landing-page {
+    height: 100vh;
+    display: flex;
+}
+
+#landing-page-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    max-width: 100%;
+}
+
+.about-page-image {
+    display: block;
+    margin: 45px;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#about-text-container {
+    display: flex;
+    flex-direction: column; /* Stack paragraph and link vertically */
+    margin: 0;
+    align-items: flex-start; /* Align items to the left */
+    flex: 1 1 400px;
+    min-width: 0; /* Allow flex item to shrink */
+    max-width: 100%; /* Prevent overflow */
+    padding: 20px;
+}
+
+
+#about,#projects,#contacts{
+    padding-left: 30px;
+    padding-right: 30px;
+    
+
+/* nav bar styling*/
+}
+#nav-bar{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+}
+#nav-bar-div{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+.nav-buttons{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+}
+.nav-buttons:hover{
+    color: gray;
+}
+
+aside{
+    display: flex;
+    position: fixed;
+    float: left;
+}
+
+/*about section styling*/
+#about-header{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+#about-page-img{
+    flex: 0 0 auto; 
+    margin: 0;
+}
+#about-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 75px;
+    gap: 20px;
+    justify-content: center;
+}
+#about-text-container{
+    display: flex;
+    flex: 1 1 400px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+/* button styling */
+.learn-more-button {
+    cursor: pointer;
+    text-decoration: none;
+    color:black;    
+}
+.learn-more-button:hover{
+    color: gray;
+}
+.submit-button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*project section styling*/
+
+#project-heading{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin: 20px;
+}
+#project-container{
+    display: grid;
+    align-items: center;
+    margin: 20px;
+}
+.project-grid{
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+footer{
+    height: auto;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+#contacts{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#footer-text{
+    text-align: center;
+    color:black;
+}
+
+/*form & contact section styling */
+
+#form-entries{
+    display: flex;
+    flex-direction: column;
+}
+#form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 20px;
+}
+#contact-header{
+    margin: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+#name,#email,#message{
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    height: 2.5rem;
+    width: 400px;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.submit-button{
+    width: 400px;
+    margin-top: 1.2rem;
+    background-color: gray;
+    color: black;
+    padding: 13px 5px;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: black;
+}
+h1{
+    font-size: 45px;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 25px;
+}
+
